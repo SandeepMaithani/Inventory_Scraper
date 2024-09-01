@@ -40,26 +40,27 @@ scraping_tool/ ├── main.py ├── scraper/ │ ├── init.py │ �
 3. **Activate the virtual environment**:
 
     *On Windows*:
-    venv\Scripts\activate
+        venv\Scripts\activate
 
     *On macOS/Linux*:
-    ```sh
-    source venv/bin/activate
+        source venv/bin/activate
 
 4. **Install dependencies**:
 
-    pip install -r requirements.txt
+    *In Terminal*:
+        pip install -r requirements.txt
 
 5. **Set the environment variable for the API token**:
 
-    In Terminal:
-    export API_TOKEN=your_static_token  # On macOS/Linux
-    set API_TOKEN=your_static_token  # On Windows
+    *In Terminal*:
+        export API_TOKEN=your_static_token  # On macOS/Linux
+        set API_TOKEN=your_static_token  # On Windows
 
 ### Running the Application
     Use uvicorn to run the FastAPI application:
 
-    uvicorn main:app --reload
+    *In Terminal*:
+        uvicorn main:app --reload
 
     The application will be available at http://127.0.0.1:8000.
 
